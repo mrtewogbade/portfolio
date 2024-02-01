@@ -23,7 +23,7 @@ export default function Home() {
           </h3>
 
           <p className="text-gray-500 dark:text-gray-300 text-center ">
-            Hey, My name is Dammy and I am a Fullstack and Web3 Developer
+            Hey, My name is Dammy and I am a Fullstack Developer and Web3 Enthusiast.
           </p>
 
           <div className="flex space-x-5 pt-6 ">
