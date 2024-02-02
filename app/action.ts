@@ -1,4 +1,5 @@
 "use server"
+import { revalidatePath } from "next/cache";
 import prisma  from "./db"
 export async function postEntry(formData: FormData){
     "use server";
@@ -8,5 +9,6 @@ export async function postEntry(formData: FormData){
             message: formData.get('entry') as string,
             username: "hello",
         }
-    })
+    });
+    revalidatePath ("/guestbook");
 }
